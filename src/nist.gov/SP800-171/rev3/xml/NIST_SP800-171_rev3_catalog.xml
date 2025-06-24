@@ -316,7 +316,7 @@
             <prop name="label" value="Supply Chain Risk Management Plan (03.17.01)" />
             <link href="#386272ec-4d0f-4bf8-8a90-e2126749f8f7" rel="reference" />
             <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
-            <link href="#4b3108da-ceb6-4133-82fa-9430aa9a20d0" rel="reference" />
+            <link href="#c2eb542d-3019-408c-b0cd-2c9ee71d84ad" rel="reference" />
             <link href="#28340b04-15d4-4c29-8eda-5d5e8d709a0f" rel="reference" />
             <link href="#243f5340-d62c-473c-9fed-46b8f455ab3e" rel="reference" />
             <part id="statement_03.17.01" name="statement"></part>
@@ -476,7 +476,7 @@
             <prop name="sort-id" value="03.17.02" />
             <prop name="label" value="Acquisition Strategies, Tools, and Methods (03.17.02)" />
             <link href="#7652f648-33b9-4b21-a0c1-4cdf287678a5" rel="reference" />
-            <link href="#4207c7f6-f1e6-4ba8-a2a5-7e78f4a61edc" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
             <link href="#2ce795ba-0e66-4171-b90e-472d2938f51c" rel="reference" />
             <part id="statement_03.17.02" name="statement"></part>
             <part id="guidance_D-03.17.02" name="guidance">
@@ -593,7 +593,7 @@
             <prop name="sort-id" value="03.17.03" />
             <prop name="label" value="Supply Chain Requirements and Processes (03.17.03)" />
             <link href="#0c03714a-ebdb-494f-bcee-47366d75032a" rel="reference" />
-            <link href="#e1d7dbeb-efe7-4c23-902a-c03da3146747" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
             <link href="#2c6fd1e4-098e-433e-b6fb-7b19315728c9" rel="reference" />
             <part id="statement_03.17.03" name="statement"></part>
             <part id="guidance_D-03.17.03" name="guidance">
@@ -3153,7 +3153,7 @@
             <prop name="label" value="External System Services (03.16.03)" />
             <link href="#00b5938a-5361-4166-b48d-b3a9cd79b5d2" rel="reference" />
             <link href="#c4b9760a-d3bd-45e3-9845-66227912a068" rel="reference" />
-            <link href="#797734ab-1b57-4686-9c5f-fd03f32e6b59" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
             <part id="statement_03.16.03" name="statement"></part>
             <part id="guidance_D-03.16.03" name="guidance">
                 <p>External system services are provided by external service providers.
@@ -4420,7 +4420,7 @@
             <prop name="sort-id" value="03.06.01" />
             <prop name="label" value="Incident Handling (03.06.01)" />
             <link href="#deb287c7-1729-42af-a330-5b55bcf1d400" rel="reference" />
-            <link href="#2fc5a375-7a28-42cc-a617-b6f9e4cf26e5" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
             <link href="#f023922a-6df4-4bd7-8e04-7bafa2d4f944" rel="reference" />
             <link href="#68d7f50c-3db1-43a7-bda8-335257feac89" rel="reference" />
             <part id="statement_03.06.01" name="statement"></part>
@@ -9515,7 +9515,7 @@
             <prop name="label" value="Role-Based Training (03.02.02)" />
             <link href="#a62128b9-28f7-4460-a1cd-f396c13ee254" rel="reference" />
             <link href="#12ee04b5-4ef3-4497-9eb1-31aa9583470e" rel="reference" />
-            <link href="#cbabfdf8-b1c1-46a7-846d-775db29581d2" rel="reference" />
+            <link href="#c2eb542d-3019-408c-b0cd-2c9ee71d84ad" rel="reference" />
             <part id="statement_03.02.02" name="statement"></part>
             <part id="guidance_D-03.02.02" name="guidance">
                 <p>Organizations determine the content and frequency of security training based on
@@ -10551,7 +10551,7 @@
             <citation>
                 <text>Petersen R, Santos D, Smith MC, Wetzel KA, Witte G (2020) Workforce Framework
                     for Cybersecurity (NICE Framework). (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special Publi</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181, Rev. 1.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-181r1" />
         </resource>
@@ -10575,18 +10575,10 @@
             <citation>
                 <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
                     Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
+                    Organizations. (National Institute of Standards and Technology, Gaithersburg, MD)</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
         </resource>
-        <resource uuid="4b3108da-ceb6-4133-82fa-9430aa9a20d0">
-            <title>SP 800-181</title>
-            <citation>
-                <text>Petersen R, Santos D, Smith MC, Wetzel KA, Witte G (2020) Workforce Framework
-                    for Cybersecurity (NICE Framework). (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special Publi</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-181r1" />
         </resource>
         <resource uuid="28340b04-15d4-4c29-8eda-5d5e8d709a0f">
             <title>SP 800-30</title>
@@ -10602,7 +10594,7 @@
             <citation>
                 <text>Joint Task Force Transformation Initiative (2011) Managing Information
                     Security Risk: Organization, Mission, and Information System View. (National
-                    Institute of Standards and Technology, Gaithersburg,</text>
+                    Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-39" />
         </resource>
@@ -10611,16 +10603,7 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-05" />
         </resource>
-        <resource uuid="4207c7f6-f1e6-4ba8-a2a5-7e78f4a61edc">
-            <title>SP 800-161</title>
-            <citation>
-                <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
-                    Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource>
-        <resource uuid="2ce795ba-0e66-4171-b90e-472d2938f51c">
+        <!-- resource uuid="2ce795ba-0e66-4171-b90e-472d2938f51c">
             <title>SP 800-30</title>
             <citation>
                 <text>Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk
@@ -10628,22 +10611,13 @@
                     NIST Special Publication (SP) 800-30, Rev.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-30r1" />
-        </resource>
+        </resource -->
         <resource uuid="0c03714a-ebdb-494f-bcee-47366d75032a">
             <title>SR-03</title>
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-03" />
         </resource>
-        <resource uuid="e1d7dbeb-efe7-4c23-902a-c03da3146747">
-            <title>SP 800-161</title>
-            <citation>
-                <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
-                    Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource>
-        <resource uuid="2c6fd1e4-098e-433e-b6fb-7b19315728c9">
+        <!-- resource uuid="2c6fd1e4-098e-433e-b6fb-7b19315728c9">
             <title>SP 800-30</title>
             <citation>
                 <text>Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk
@@ -10651,7 +10625,7 @@
                     NIST Special Publication (SP) 800-30, Rev.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-30r1" />
-        </resource>
+        </resource -->
         <resource uuid="20da5b99-f7c5-4ad3-9fb6-a724de077d30">
             <title>AC-02</title>
             <rlink
@@ -10686,7 +10660,7 @@
             <citation>
                 <text>Ylonen T, Turner P, Scarfone KA, Souppaya MP (2015) Security of Interactive
                     and Automated Access Management Using Secure Shell (SSH). (National Institute of
-                    Standards and Technology, Gaithersburg, MD)</text>
+                    Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7966.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.IR.7966" />
         </resource>
@@ -10704,7 +10678,7 @@
             <citation>
                 <text>Souppaya MP, Scarfone KA (2016) User’s Guide to Telework and Bring Your Own
                     Device (BYOD) Security. (National Institute of Standards and Technology,
-                    Gaithersburg, MD), NIST Special Publication (SP) 80</text>
+                    Gaithersburg, MD), NIST Special Publication (SP) 800-114, Rev. 1.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-114r1" />
         </resource>
@@ -10713,7 +10687,8 @@
             <citation>
                 <text>Padgette J, Bahr J, Holtmann M, Batra M, Chen L, Smithbey R, Scarfone KA
                     (2017) Guide to Bluetooth Security. (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special Publicatio</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-121, Rev. 2, 
+                    Includes updates as of January 19, 2022.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-121r2-upd1" />
         </resource>
@@ -10722,7 +10697,8 @@
             <citation>
                 <text>Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA
                     (2014) Guide to Attribute Based Access Control (ABAC) Definition and
-                    Considerations. (National Institute of Standards and Tec</text>
+                    Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), 
+                    NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-162" />
         </resource>
@@ -10740,7 +10716,7 @@
             <citation>
                 <text>Yaga DJ, Kuhn R, Hu VC (2017) Verification and Test Methods for Access Control
                     Policies/Models. (National Institute of Standards and Technology, Gaithersburg,
-                    MD), NIST Special Publication (SP) 800-19</text>
+                    MD), NIST Special Publication (SP) 800-192.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-192" />
         </resource>
@@ -10749,7 +10725,7 @@
             <citation>
                 <text>Souppaya MP, Scarfone KA (2016) Guide to Enterprise Telework, Remote Access,
                     and Bring Your Own Device (BYOD) Security. (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-46, Rev. 2.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-46r2" />
         </resource>
@@ -10767,7 +10743,7 @@
             <citation>
                 <text>Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best
                     Practices for Key Management Organizations. (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Specia</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-57pt2r1" />
         </resource>
@@ -10776,7 +10752,7 @@
             <citation>
                 <text>Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3:
                     Application-Specific Key Management Guidance. (National Institute of Standards
-                    and Technology, Gaithersburg, MD), NIST Special Publ</text>
+                    and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-57pt3r1" />
         </resource>
@@ -10808,7 +10784,7 @@
             <citation>
                 <text>Ylonen T, Turner P, Scarfone KA, Souppaya MP (2015) Security of Interactive
                     and Automated Access Management Using Secure Shell (SSH). (National Institute of
-                    Standards and Technology, Gaithersburg, MD)</text>
+                    Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7966.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.IR.7966" />
         </resource>
@@ -10826,7 +10802,7 @@
             <citation>
                 <text>Souppaya MP, Scarfone KA (2016) User’s Guide to Telework and Bring Your Own
                     Device (BYOD) Security. (National Institute of Standards and Technology,
-                    Gaithersburg, MD), NIST Special Publication (SP) 80</text>
+                    Gaithersburg, MD), NIST Special Publication (SP) 800-114, Rev. 1.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-114r1" />
         </resource>
@@ -10835,7 +10811,8 @@
             <citation>
                 <text>Padgette J, Bahr J, Holtmann M, Batra M, Chen L, Smithbey R, Scarfone KA
                     (2017) Guide to Bluetooth Security. (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special Publicatio</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-121, Rev. 2, 
+                    Includes updates as of January 19, 2022.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-121r2-upd1" />
         </resource>
@@ -10844,7 +10821,8 @@
             <citation>
                 <text>Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA
                     (2014) Guide to Attribute Based Access Control (ABAC) Definition and
-                    Considerations. (National Institute of Standards and Tec</text>
+                    Considerations. (National Institute of Standards and Technology, Gaithersburg, MD),
+                     NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-162" />
         </resource>
@@ -10862,7 +10840,7 @@
             <citation>
                 <text>Yaga DJ, Kuhn R, Hu VC (2017) Verification and Test Methods for Access Control
                     Policies/Models. (National Institute of Standards and Technology, Gaithersburg,
-                    MD), NIST Special Publication (SP) 800-19</text>
+                    MD), NIST Special Publication (SP) 800-192.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-192" />
         </resource>
@@ -10871,7 +10849,7 @@
             <citation>
                 <text>Souppaya MP, Scarfone KA (2016) Guide to Enterprise Telework, Remote Access,
                     and Bring Your Own Device (BYOD) Security. (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-46, Rev. 2.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-46r2" />
         </resource>
@@ -10889,7 +10867,7 @@
             <citation>
                 <text>Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best
                     Practices for Key Management Organizations. (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Specia</text>
+                    Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-57pt2r1" />
         </resource>
@@ -11399,15 +11377,6 @@
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-160v1r1" />
         </resource>
-        <resource uuid="797734ab-1b57-4686-9c5f-fd03f32e6b59">
-            <title>SP 800-161</title>
-            <citation>
-                <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
-                    Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource>
         <resource uuid="8bd47a6a-0fba-428c-a3fe-28c12c48d8f5">
             <title>CM-02</title>
             <rlink
@@ -11684,15 +11653,6 @@
             <title>IR-04</title>
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=IR-04" />
-        </resource>
-        <resource uuid="2fc5a375-7a28-42cc-a617-b6f9e4cf26e5">
-            <title>SP 800-161</title>
-            <citation>
-                <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
-                    Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
         </resource>
         <resource uuid="f023922a-6df4-4bd7-8e04-7bafa2d4f944">
             <title>SP 800-50</title>
@@ -12823,7 +12783,7 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-03" />
         </resource>
-        <resource uuid="12ee04b5-4ef3-4497-9eb1-31aa9583470e">
+        <!-- resource uuid="12ee04b5-4ef3-4497-9eb1-31aa9583470e">
             <title>SP 800-161</title>
             <citation>
                 <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
@@ -12831,15 +12791,7 @@
                     Organizations. (National Institute of Standards and Technology</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource>
-        <resource uuid="cbabfdf8-b1c1-46a7-846d-775db29581d2">
-            <title>SP 800-181</title>
-            <citation>
-                <text>Petersen R, Santos D, Smith MC, Wetzel KA, Witte G (2020) Workforce Framework
-                    for Cybersecurity (NICE Framework). (National Institute of Standards and
-                    Technology, Gaithersburg, MD), NIST Special Publi</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-181r1" />
+        </resource -->
         </resource>
         <resource uuid="282d2b4b-a3a8-4122-9f86-7deb64603eac">
             <title>RA-03</title>
@@ -12856,7 +12808,7 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-06" />
         </resource>
-        <resource uuid="53766b87-03a1-4e18-a724-e5f9057ff3fd">
+        <!-- resource uuid="53766b87-03a1-4e18-a724-e5f9057ff3fd">
             <title>SP 800-161</title>
             <citation>
                 <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
@@ -12864,7 +12816,7 @@
                     Organizations. (National Institute of Standards and Technology</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource>
+        </resource -->
         <resource uuid="2e6ba428-ccfb-4563-9fcc-c4d10f107200">
             <title>SP 800-30</title>
             <citation>
@@ -13039,7 +12991,7 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SI-05" />
         </resource>
-        <resource uuid="d63c1605-b320-42f1-af7d-51aab399e0c4">
+        <!-- resource uuid="d63c1605-b320-42f1-af7d-51aab399e0c4">
             <title>SP 800-161</title>
             <citation>
                 <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
@@ -13047,7 +12999,7 @@
                     Organizations. (National Institute of Standards and Technology</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource>
+        </resource -->
         <resource uuid="c1d1e9bb-72a3-4082-ab24-587246099c2d">
             <title>SI-04</title>
             <rlink
