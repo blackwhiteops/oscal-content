@@ -316,7 +316,7 @@
             <prop name="label" value="Supply Chain Risk Management Plan (03.17.01)" />
             <link href="#386272ec-4d0f-4bf8-8a90-e2126749f8f7" rel="reference" />
             <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
-            <link href="#c2eb542d-3019-408c-b0cd-2c9ee71d84ad" rel="reference" />
+            <link href="#c2eb542d-3019-408c-b0cd-2c9ee71d84ad" rel="reference" /><!-- OK -->
             <link href="#28340b04-15d4-4c29-8eda-5d5e8d709a0f" rel="reference" />
             <link href="#243f5340-d62c-473c-9fed-46b8f455ab3e" rel="reference" />
             <part id="statement_03.17.01" name="statement"></part>
@@ -476,8 +476,8 @@
             <prop name="sort-id" value="03.17.02" />
             <prop name="label" value="Acquisition Strategies, Tools, and Methods (03.17.02)" />
             <link href="#7652f648-33b9-4b21-a0c1-4cdf287678a5" rel="reference" />
-            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
-            <link href="#2ce795ba-0e66-4171-b90e-472d2938f51c" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" /><!-- OK -->
+            <link href="#28340b04-15d4-4c29-8eda-5d5e8d709a0f" rel="reference" />
             <part id="statement_03.17.02" name="statement"></part>
             <part id="guidance_D-03.17.02" name="guidance">
                 <p>The acquisition process provides an important vehicle for protecting the supply
@@ -593,8 +593,8 @@
             <prop name="sort-id" value="03.17.03" />
             <prop name="label" value="Supply Chain Requirements and Processes (03.17.03)" />
             <link href="#0c03714a-ebdb-494f-bcee-47366d75032a" rel="reference" />
-            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
-            <link href="#2c6fd1e4-098e-433e-b6fb-7b19315728c9" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" /><!-- OK -->
+            <link href="#28340b04-15d4-4c29-8eda-5d5e8d709a0f" rel="reference" />
             <part id="statement_03.17.03" name="statement"></part>
             <part id="guidance_D-03.17.03" name="guidance">
                 <p>Supply chain elements include organizations, entities, or tools that are employed
@@ -764,7 +764,7 @@
             <link href="#3b554b76-a327-4c09-8fd6-d3b365ee73e2" rel="reference" />
             <link href="#b019ff58-d00a-4c6e-b7b6-e91f09748516" rel="reference" />
             <link href="#f5b21b3c-6dac-4dc1-901a-22154990fa38" rel="reference" />
-            <link href="#424c773d-6dbd-416d-91a1-574642f2bf1c" rel="reference" />
+            <link href="#8953d3f5-e827-4446-8c45-231765d441f3" rel="reference" />
             <link href="#384ff294-3d21-45a0-b36e-274d1d84ade8" rel="reference" />
             <link href="#13934541-7b74-42a8-904b-378b7d2efce3" rel="reference" />
             <link href="#4fb66dfc-ffb7-4910-a895-963b6b78948a" rel="reference" />
@@ -1055,9 +1055,9 @@
             <prop name="sort-id" value="03.01.02" />
             <prop name="label" value="Access Enforcement (03.01.02)" />
             <link href="#a45ba13f-f0f7-4830-9b9a-eb9839fb03e2" rel="reference" />
-            <link href="#8232463e-936e-41e7-af75-d45508dca66b" rel="reference" />
+            <link href="#f5b21b3c-6dac-4dc1-901a-22154990fa38" rel="reference" />
             <link href="#8953d3f5-e827-4446-8c45-231765d441f3" rel="reference" />
-            <link href="#bca86581-1b22-44d3-9718-351ccf33a325" rel="reference" />
+            <link href="#384ff294-3d21-45a0-b36e-274d1d84ade8" rel="reference" />
             <link href="#e3fadcde-df49-4bc3-8b4e-7fc4cb4491fb" rel="reference" />
             <link href="#3d564a56-c0bb-42ac-8a91-9e1478094b10" rel="reference" />
             <link href="#a19895b8-c881-4281-b3d5-2b21e9ebce74" rel="reference" />
@@ -1974,9 +1974,9 @@
             <link href="#aa67aeea-e4e8-4663-b64b-a74f3702e430" rel="reference" />
             <link href="#be183707-0d94-415b-99c1-4e2d476ae4e2" rel="reference" />
             <link href="#a9667d71-5bb9-4b3b-a378-b9b863bcffb4" rel="reference" />
-            <link href="#70ee3393-fbbb-4f53-9632-bad2072a2df3" rel="reference" />
-            <link href="#8cea9e61-189e-4bdb-94d1-ed313495a6ac" rel="reference" />
-            <link href="#bd443ea6-4c08-4a02-a2d8-2d1b41f0e999" rel="reference" />
+            <link href="#8953d3f5-e827-4446-8c45-231765d441f3" rel="reference" />
+            <link href="#384ff294-3d21-45a0-b36e-274d1d84ade8" rel="reference" />
+            <link href="#13934541-7b74-42a8-904b-378b7d2efce3" rel="reference" />
             <link href="#d770885a-9a54-48c7-8f5c-859283abe1c5" rel="reference" />
             <link href="#b8821b3e-62a3-4299-b58a-92345881c06c" rel="reference" />
             <link href="#c6e965af-b13f-4fdd-83e9-9c3e58462420" rel="reference" />
@@ -2258,7 +2258,7 @@
             <prop name="label" value="Access Control for Mobile Devices (03.01.18)" />
             <link href="#47e545a1-4deb-42b4-8b6c-0f1767b794e1" rel="reference" />
             <link href="#f6dc95b2-48a2-448c-85b0-b8ef0246252b" rel="reference" />
-            <link href="#d2d3c10e-dab0-4d65-99a6-44b47303c38f" rel="reference" />
+            <link href="#13934541-7b74-42a8-904b-378b7d2efce3" rel="reference" />
             <link href="#e6f19c68-8cd2-4611-82b2-bb066fd49994" rel="reference" />
             <link href="#bccf0302-2857-4347-8614-210580071d49" rel="reference" />
             <part id="statement_03.01.18" name="statement"></part>
@@ -3153,7 +3153,7 @@
             <prop name="label" value="External System Services (03.16.03)" />
             <link href="#00b5938a-5361-4166-b48d-b3a9cd79b5d2" rel="reference" />
             <link href="#c4b9760a-d3bd-45e3-9845-66227912a068" rel="reference" />
-            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" /><!-- OK -->
             <part id="statement_03.16.03" name="statement"></part>
             <part id="guidance_D-03.16.03" name="guidance">
                 <p>External system services are provided by external service providers.
@@ -4420,7 +4420,7 @@
             <prop name="sort-id" value="03.06.01" />
             <prop name="label" value="Incident Handling (03.06.01)" />
             <link href="#deb287c7-1729-42af-a330-5b55bcf1d400" rel="reference" />
-            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" /><!-- OK -->
             <link href="#f023922a-6df4-4bd7-8e04-7bafa2d4f944" rel="reference" />
             <link href="#68d7f50c-3db1-43a7-bda8-335257feac89" rel="reference" />
             <part id="statement_03.06.01" name="statement"></part>
@@ -6013,7 +6013,7 @@
             <link href="#8fe5827d-176d-4e57-bcee-a3a1150805ef" rel="reference" />
             <link href="#a20d1226-8814-4e95-a725-cf3d2fa8004a" rel="reference" />
             <link href="#332695d8-26c8-4b9b-be2d-370df386d583" rel="reference" />
-            <link href="#e012e746-bb19-4327-8123-8855b10b8eea" rel="reference" />
+            <link href="#243f5340-d62c-473c-9fed-46b8f455ab3e" rel="reference" />
             <link href="#d07c165f-52e2-4a94-b3e5-aaa0f80d5bc9" rel="reference" />
             <part id="statement_03.12.03" name="statement"></part>
             <part id="guidance_D-03.12.03" name="guidance">
@@ -9514,8 +9514,8 @@
             <prop name="sort-id" value="03.02.02" />
             <prop name="label" value="Role-Based Training (03.02.02)" />
             <link href="#a62128b9-28f7-4460-a1cd-f396c13ee254" rel="reference" />
-            <link href="#12ee04b5-4ef3-4497-9eb1-31aa9583470e" rel="reference" />
-            <link href="#c2eb542d-3019-408c-b0cd-2c9ee71d84ad" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
+            <link href="#c2eb542d-3019-408c-b0cd-2c9ee71d84ad" rel="reference" /><!-- OK -->
             <part id="statement_03.02.02" name="statement"></part>
             <part id="guidance_D-03.02.02" name="guidance">
                 <p>Organizations determine the content and frequency of security training based on
@@ -9649,7 +9649,7 @@
             <link href="#282d2b4b-a3a8-4122-9f86-7deb64603eac" rel="reference" />
             <link href="#2cc328e0-625a-4ef0-8e92-e755e05153b2" rel="reference" />
             <link href="#194b62bd-ec50-4d79-aad5-764eca85a02b" rel="reference" />
-            <link href="#53766b87-03a1-4e18-a724-e5f9057ff3fd" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
             <link href="#2e6ba428-ccfb-4563-9fcc-c4d10f107200" rel="reference" />
             <part id="statement_03.11.01" name="statement"></part>
             <part id="guidance_D-03.11.01" name="guidance">
@@ -9905,7 +9905,7 @@
             <link href="#bc18ab0e-f211-4680-af13-5d2cd97435da" rel="reference" />
             <link href="#c1187a4a-227c-4400-ab39-c3e35300d595" rel="reference" />
             <link href="#b3764acb-1f7d-4e5e-9ea2-301fa0f0093d" rel="reference" />
-            <link href="#ebcf9bf0-7df5-43b8-b8d9-691791be67eb" rel="reference" />
+            <link href="#243f5340-d62c-473c-9fed-46b8f455ab3e" rel="reference" />
             <part id="statement_03.11.04" name="statement"></part>
             <part id="guidance_D-03.11.04" name="guidance">
                 <p>This requirement addresses the need to determine an appropriate response to risk
@@ -9994,7 +9994,7 @@
             <prop name="label" value="Flaw Remediation (03.14.01)" />
             <link href="#44fbc87d-27f6-41de-99b0-9d28593140ce" rel="reference" />
             <link href="#e1b6bdc4-5c85-4da5-8a1f-b85dc6b764df" rel="reference" />
-            <link href="#22deb899-37c9-47ff-8e7a-9a038b332f8e" rel="reference" />
+            <link href="#243f5340-d62c-473c-9fed-46b8f455ab3e" rel="reference" />
             <link href="#197c02fd-0d72-435a-ab82-7dca271f1f1f" rel="reference" />
             <part id="statement_03.14.01" name="statement"></part>
             <part id="guidance_D-03.14.01" name="guidance">
@@ -10250,7 +10250,7 @@
             <prop name="sort-id" value="03.14.03" />
             <prop name="label" value="Security Alerts, Advisories, and Directives (03.14.03)" />
             <link href="#19e75ab8-43f5-4251-998e-1d90e130d8f0" rel="reference" />
-            <link href="#d63c1605-b320-42f1-af7d-51aab399e0c4" rel="reference" />
+            <link href="#40fbd420-8f3f-4da5-97d7-465e607f26aa" rel="reference" />
             <part id="statement_03.14.03" name="statement"></part>
             <part id="guidance_D-03.14.03" name="guidance">
                 <p>There are many publicly available sources of system security alerts and
@@ -10579,7 +10579,6 @@
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
         </resource>
-        </resource>
         <resource uuid="28340b04-15d4-4c29-8eda-5d5e8d709a0f">
             <title>SP 800-30</title>
             <citation>
@@ -10603,29 +10602,11 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-05" />
         </resource>
-        <!-- resource uuid="2ce795ba-0e66-4171-b90e-472d2938f51c">
-            <title>SP 800-30</title>
-            <citation>
-                <text>Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk
-                    Assessments. (National Institute of Standards and Technology, Gaithersburg, MD),
-                    NIST Special Publication (SP) 800-30, Rev.</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-30r1" />
-        </resource -->
         <resource uuid="0c03714a-ebdb-494f-bcee-47366d75032a">
             <title>SR-03</title>
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-03" />
         </resource>
-        <!-- resource uuid="2c6fd1e4-098e-433e-b6fb-7b19315728c9">
-            <title>SP 800-30</title>
-            <citation>
-                <text>Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk
-                    Assessments. (National Institute of Standards and Technology, Gaithersburg, MD),
-                    NIST Special Publication (SP) 800-30, Rev.</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-30r1" />
-        </resource -->
         <resource uuid="20da5b99-f7c5-4ad3-9fb6-a724de077d30">
             <title>AC-02</title>
             <rlink
@@ -10654,15 +10635,6 @@
                     NIST Interagency or Internal Report (IR) 7874.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.IR.7874" />
-        </resource>
-        <resource uuid="424c773d-6dbd-416d-91a1-574642f2bf1c">
-            <title>IR 7966</title>
-            <citation>
-                <text>Ylonen T, Turner P, Scarfone KA, Souppaya MP (2015) Security of Interactive
-                    and Automated Access Management Using Secure Shell (SSH). (National Institute of
-                    Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7966.</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.IR.7966" />
         </resource>
         <resource uuid="384ff294-3d21-45a0-b36e-274d1d84ade8">
             <title>SP 800-113</title>
@@ -10770,15 +10742,6 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-03" />
         </resource>
-        <resource uuid="8232463e-936e-41e7-af75-d45508dca66b">
-            <title>IR 7874</title>
-            <citation>
-                <text>Hu VC, Scarfone KA (2012) Guidelines for Access Control System Evaluation
-                    Metrics. (National Institute of Standards and Technology, Gaithersburg, MD),
-                    NIST Interagency or Internal Report (IR) 7874.</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.IR.7874" />
-        </resource>
         <resource uuid="8953d3f5-e827-4446-8c45-231765d441f3">
             <title>IR 7966</title>
             <citation>
@@ -10787,15 +10750,6 @@
                     Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7966.</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.IR.7966" />
-        </resource>
-        <resource uuid="bca86581-1b22-44d3-9718-351ccf33a325">
-            <title>SP 800-113</title>
-            <citation>
-                <text>Frankel SE, Hoffman P, Orebaugh AD, Park R (2008) Guide to SSL VPNs. (National
-                    Institute of Standards and Technology, Gaithersburg, MD), NIST Special
-                    Publication (SP) 800-113.</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-113" />
         </resource>
         <resource uuid="e3fadcde-df49-4bc3-8b4e-7fc4cb4491fb">
             <title>SP 800-114</title>
@@ -11042,33 +10996,15 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-17(04)" />
         </resource>
-        <resource uuid="70ee3393-fbbb-4f53-9632-bad2072a2df3">
-            <title>IR 7966</title>
-            <citation>
-                <text>Ylonen T, Turner P, Scarfone KA, Souppaya MP (2015) Security of Interactive
-                    and Automated Access Management Using Secure Shell (SSH). (National Institute of
-                    Standards and Technology, Gaithersburg, MD)</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.IR.7966" />
-        </resource>
-        <resource uuid="8cea9e61-189e-4bdb-94d1-ed313495a6ac">
-            <title>SP 800-113</title>
-            <citation>
-                <text>Frankel SE, Hoffman P, Orebaugh AD, Park R (2008) Guide to SSL VPNs. (National
-                    Institute of Standards and Technology, Gaithersburg, MD), NIST Special
-                    Publication (SP) 800-113.</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-113" />
-        </resource>
-        <resource uuid="bd443ea6-4c08-4a02-a2d8-2d1b41f0e999">
-            <title>SP 800-114</title>
-            <citation>
-                <text>Souppaya MP, Scarfone KA (2016) User’s Guide to Telework and Bring Your Own
-                    Device (BYOD) Security. (National Institute of Standards and Technology,
-                    Gaithersburg, MD), NIST Special Publication (SP) 80</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-114r1" />
-        </resource>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
         <resource uuid="d770885a-9a54-48c7-8f5c-859283abe1c5">
             <title>SP 800-121</title>
             <citation>
@@ -11147,15 +11083,6 @@
             <title>AC-19(05)</title>
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AC-19(05)" />
-        </resource>
-        <resource uuid="d2d3c10e-dab0-4d65-99a6-44b47303c38f">
-            <title>SP 800-114</title>
-            <citation>
-                <text>Souppaya MP, Scarfone KA (2016) User’s Guide to Telework and Bring Your Own
-                    Device (BYOD) Security. (National Institute of Standards and Technology,
-                    Gaithersburg, MD), NIST Special Publication (SP) 80</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-114r1" />
         </resource>
         <resource uuid="e6f19c68-8cd2-4611-82b2-bb066fd49994">
             <title>SP 800-124</title>
@@ -12268,15 +12195,6 @@
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-37r2" />
         </resource>
-        <resource uuid="e012e746-bb19-4327-8123-8855b10b8eea">
-            <title>SP 800-39</title>
-            <citation>
-                <text>Joint Task Force Transformation Initiative (2011) Managing Information
-                    Security Risk: Organization, Mission, and Information System View. (National
-                    Institute of Standards and Technology, Gaithersburg,</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-39" />
-        </resource>
         <resource uuid="d07c165f-52e2-4a94-b3e5-aaa0f80d5bc9">
             <title>SP 800-53A</title>
             <citation>
@@ -12783,16 +12701,7 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=AT-03" />
         </resource>
-        <!-- resource uuid="12ee04b5-4ef3-4497-9eb1-31aa9583470e">
-            <title>SP 800-161</title>
-            <citation>
-                <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
-                    Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource -->
-        </resource>
+
         <resource uuid="282d2b4b-a3a8-4122-9f86-7deb64603eac">
             <title>RA-03</title>
             <rlink
@@ -12808,15 +12717,6 @@
             <rlink
                 href="https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=SR-06" />
         </resource>
-        <!-- resource uuid="53766b87-03a1-4e18-a724-e5f9057ff3fd">
-            <title>SP 800-161</title>
-            <citation>
-                <text>Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022)
-                    Cybersecurity Supply Chain Risk Management Practices for Systems and
-                    Organizations. (National Institute of Standards and Technology</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-161r1" />
-        </resource -->
         <resource uuid="2e6ba428-ccfb-4563-9fcc-c4d10f107200">
             <title>SP 800-30</title>
             <citation>
@@ -12913,15 +12813,6 @@
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-37r2" />
         </resource>
-        <resource uuid="ebcf9bf0-7df5-43b8-b8d9-691791be67eb">
-            <title>SP 800-39</title>
-            <citation>
-                <text>Joint Task Force Transformation Initiative (2011) Managing Information
-                    Security Risk: Organization, Mission, and Information System View. (National
-                    Institute of Standards and Technology, Gaithersburg,</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-39" />
-        </resource>
         <resource uuid="44fbc87d-27f6-41de-99b0-9d28593140ce">
             <title>SI-02</title>
             <rlink
@@ -12935,15 +12826,6 @@
                     Institute of Standards and Technology, Gaithersburg, MD)</text>
             </citation>
             <rlink href="https://doi.org/10.6028/NIST.SP.800-128" />
-        </resource>
-        <resource uuid="22deb899-37c9-47ff-8e7a-9a038b332f8e">
-            <title>SP 800-39</title>
-            <citation>
-                <text>Joint Task Force Transformation Initiative (2011) Managing Information
-                    Security Risk: Organization, Mission, and Information System View. (National
-                    Institute of Standards and Technology, Gaithersburg,</text>
-            </citation>
-            <rlink href="https://doi.org/10.6028/NIST.SP.800-39" />
         </resource>
         <resource uuid="197c02fd-0d72-435a-ab82-7dca271f1f1f">
             <title>SP 800-40</title>
