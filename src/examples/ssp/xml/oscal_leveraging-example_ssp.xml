@@ -266,14 +266,10 @@ Cust-A    Cust-B    Cust-C
       </resource>
       <resource uuid="6b45e2a5-b238-4752-ba12-cfd6ef2a83df">
          <description>
-            <p>NIST Special Publication 800-53 Revision 4: Low Baseline Profile</p>
+            <p>NIST Special Publication 800-53 Revision 5: Low Baseline Profile</p>
          </description>
-         <rlink media-type="application/oscal.catalog+xml"
-            href="../../../nist.gov/SP800-53/rev4/xml/NIST_SP-800-53_rev4_LOW-baseline_profile.xml" />
-         <rlink media-type="application/oscal.catalog+json"
-            href="../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json" />
-         <rlink media-type="application/oscal.catalog+yaml"
-            href="../../../nist.gov/SP800-53/rev4/yaml/NIST_SP-800-53_rev4_LOW-baseline_profile.yaml" />
+         <rlink media-type="application/oscal.catalog+zip"
+            href="https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip" />
       </resource>
       <resource uuid="b3a3079c-ace3-4aae-9acd-d52d418472f2">
          <description>
