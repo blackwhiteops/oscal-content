@@ -37,7 +37,7 @@
             <p>In this version of the artifact, the content was updated to OSCAL v1.1.3 and the system name was changed. Additionally errors like importing non-existing SSP were addressed.</p>
         </remarks>
     </metadata>
-    <import-ssp href="../../ssp/xml/ifa_ssp-example.xml" />
+    <import-ssp href="../../ssp/xml/ifa_ssp.xml" />
     <local-definitions>
         <activity uuid="52277182-1ba3-4cb6-8d96-b1b97aaf9d6b">
             <title>Examine System Elements for Least Privilege Design and Implementation</title>
