@@ -1,0 +1,53 @@
+trigger:
+- none  # Manual trigger for testing; change to your branch later if needed
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. Install Java 17
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '17'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
+  displayName: 'Install Java 17'
+
+# 2. Download OSCAL CLI
+- script: |
+    set -e
+    echo "Downloading OSCAL CLI..."
+    curl -LO https://github.com/usnistgov/OSCAL/releases/latest/download/oscal-cli.jar
+    ls -lh oscal-cli.jar
+  displayName: 'Download OSCAL CLI'
+
+# 3. Validate all OSCAL JSON and XML files under nist.gov
+- script: |
+    set -e
+    echo "Starting OSCAL validation for all JSON and XML files..."
+    mkdir -p validation-results
+    PASS_COUNT=0
+    FAIL_COUNT=0
+
+    for file in $(find $(System.DefaultWorkingDirectory)/nist.gov -type f \( -name "*.json" -o -name "*.xml" \)); do
+      echo "Validating $file"
+      if java -jar oscal-cli.jar validate "$file" > validation-results/$(basename "$file").log 2>&1; then
+        echo "PASS: $file" >> validation-results/summary.log
+        PASS_COUNT=$((PASS_COUNT+1))
+      else
+        echo "FAIL: $file" >> validation-results/summary.log
+        FAIL_COUNT=$((FAIL_COUNT+1))
+      fi
+    done
+
+    echo "Validation complete."
+    echo "Summary: $PASS_COUNT passed, $FAIL_COUNT failed" | tee validation-results/final-summary.log
+  displayName: 'Validate All OSCAL Files'
+
+# 4. Publish validation results as pipeline artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'validation-results'
+    ArtifactName: 'oscal-validation-results'
+    publishLocation: 'Container'
+  displayName: 'Publish Validation Results'
