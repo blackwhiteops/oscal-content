@@ -1,52 +1,22 @@
 trigger:
-- main  # Adjust if you want a different branch trigger
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  # Replace with your Key Vault secret names or pipeline variables
-  AZURE_STORAGE_ACCOUNT: 'yourstorageaccount'
-  AZURE_STORAGE_CONTAINER: 'oscal-artifacts'
-  TEAMS_WEBHOOK_URL: '$(TEAMS_WEBHOOK_URL)'  # Store in pipeline variables or Key Vault
-
 steps:
-# 1. Skip default checkout
 - checkout: none
 
-# 2. Clone OSCAL GitHub repo
 - script: |
     git clone https://github.com/usnistgov/oscal-content.git
     cd oscal-content/nist.gov
   displayName: 'Clone OSCAL Repo'
 
-# 3. Validate OSCAL schema using oscal-cli in Docker
 - script: |
     docker run --rm -v $(Build.SourcesDirectory)/oscal-content:/oscal usnistgov/oscal-cli validate /oscal/nist.gov/catalog.json
   displayName: 'Validate OSCAL Schema'
 
-# 4. Hash files for integrity
 - script: |
     cd oscal-content/nist.gov
     sha256sum * > sha256_manifest.txt
   displayName: 'Generate SHA-256 Manifest'
-
-# 5. Upload validated artifacts to Azure Blob Storage
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'Your-Azure-Service-Connection'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az storage blob upload-batch \
-        --account-name $AZURE_STORAGE_ACCOUNT \
-        --destination $AZURE_STORAGE_CONTAINER \
-        --source "$(Build.SourcesDirectory)/oscal-content/nist.gov"
-  displayName: 'Upload OSCAL Artifacts to Azure Blob'
-
-# 6. Notify Teams for approval
-- script: |
-    curl -H 'Content-Type: application/json' \
-    -d '{"text":"✅ OSCAL artifacts validated and uploaded. Please review and approve in CAB."}' \
-    $TEAMS_WEBHOOK_URL
-  displayName: 'Send Teams Notification'
