@@ -1,14 +1,8 @@
 trigger:
-- main  # Adjust if you want a different branch trigger
+- main  # Adjust if needed
 
 pool:
   vmImage: 'ubuntu-latest'
-
-variables:
-  # Replace with your Key Vault secret names or pipeline variables
-  AZURE_STORAGE_ACCOUNT: 'yourstorageaccount'
-  AZURE_STORAGE_CONTAINER: 'oscal-artifacts'
-  TEAMS_WEBHOOK_URL: '$(TEAMS_WEBHOOK_URL)'  # Store in pipeline variables or Key Vault
 
 steps:
 # 1. Skip default checkout
@@ -30,23 +24,3 @@ steps:
     cd oscal-content/nist.gov
     sha256sum * > sha256_manifest.txt
   displayName: 'Generate SHA-256 Manifest'
-
-# 5. Upload validated artifacts to Azure Blob Storage
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'Your-Azure-Service-Connection'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az storage blob upload-batch \
-        --account-name $AZURE_STORAGE_ACCOUNT \
-        --destination $AZURE_STORAGE_CONTAINER \
-        --source "$(Build.SourcesDirectory)/oscal-content/nist.gov"
-  displayName: 'Upload OSCAL Artifacts to Azure Blob'
-
-# 6. Notify Teams for approval
-- script: |
-    curl -H 'Content-Type: application/json' \
-    -d '{"text":"✅ OSCAL artifacts validated and uploaded. Please review and approve in CAB."}' \
-    $TEAMS_WEBHOOK_URL
-  displayName: 'Send Teams Notification'
