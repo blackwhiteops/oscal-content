@@ -1,0 +1,108 @@
+trigger:
+- none  # Manual trigger for testing; change later if needed
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. Install Java 17
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '17'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
+  displayName: 'Install Java 17'
+
+# 2. Download OSCAL CLI
+- script: |
+    set -e
+    echo "Downloading OSCAL CLI..."
+    curl -LO https://github.com/usnistgov/OSCAL/releases/latest/download/oscal-cli.jar
+    ls -lh oscal-cli.jar
+  displayName: 'Download OSCAL CLI'
+
+# 3. Convert XML to JSON and normalize minified files
+- script: |
+    set -e
+    echo "Converting XML files to JSON..."
+    mkdir -p converted-oscal
+    for file in $(find $(System.DefaultWorkingDirectory)/nist.gov -name "*.xml"); do
+      base=$(basename "$file" .xml)
+      echo "Converting $file to JSON"
+      java -jar oscal-cli.jar convert --to json "$file" "converted-oscal/${base}.json" || echo "Conversion failed for $file" >> converted-oscal/conversion-failures.log
+    done
+
+    echo "Copying non-minified JSON files..."
+    find $(System.DefaultWorkingDirectory)/nist.gov -name "*.json" ! -name "*-min.json" -exec cp {} converted-oscal/ \;
+  displayName: 'Convert and Normalize OSCAL Files'
+
+# 4. Validate all converted and normalized OSCAL JSON files
+- script: |
+    set -e
+    echo "Starting OSCAL validation..."
+    mkdir -p validation-results
+    PASS_COUNT=0
+    FAIL_COUNT=0
+
+    for file in $(find converted-oscal -name "*.json"); do
+      echo "Validating $file"
+      if java -jar oscal-cli.jar validate "$file" > validation-results/$(basename "$file").log 2>&1; then
+        echo "PASS: $file" >> validation-results/summary.log
+        PASS_COUNT=$((PASS_COUNT+1))
+      else
+        echo "FAIL: $file" >> validation-results/summary.log
+        FAIL_COUNT=$((FAIL_COUNT+1))
+      fi
+    done
+
+    echo "Validation complete."
+    echo "Summary: $PASS_COUNT passed, $FAIL_COUNT failed" | tee validation-results/final-summary.log
+  displayName: 'Validate OSCAL Files'
+
+# 5. Parse manually uploaded compliance docs (Word/PDF)
+- script: |
+    set -e
+    echo "Parsing uploaded compliance documents..."
+    mkdir -p parsed-compliance
+    for file in $(find $(System.DefaultWorkingDirectory)/compliance-uploads -type f \( -name "*.docx" -o -name "*.pdf" \)); do
+      echo "Extracting text from $file"
+      # Use Python for parsing
+      python3 - <<EOF
+import sys
+import os
+from pathlib import Path
+import docx
+import fitz  # PyMuPDF for PDFs
+
+file_path = "$file"
+output_path = "parsed-compliance/" + Path(file_path).stem + ".txt"
+
+if file_path.endswith(".docx"):
+    doc = docx.Document(file_path)
+    text = "\n".join([p.text for p in doc.paragraphs])
+elif file_path.endswith(".pdf"):
+    doc = fitz.open(file_path)
+    text = "\n".join([page.get_text() for page in doc])
+else:
+    text = ""
+
+with open(output_path, "w") as f:
+    f.write(text)
+EOF
+    done
+  displayName: 'Parse Compliance Docs (Word/PDF)'
+
+# 6. Publish all results as artifacts
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'validation-results'
+    ArtifactName: 'oscal-validation-results'
+    publishLocation: 'Container'
+  displayName: 'Publish OSCAL Validation Results'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'parsed-compliance'
+    ArtifactName: 'parsed-compliance-docs'
+    publishLocation: 'Container'
+  displayName: 'Publish Parsed Compliance Docs'
