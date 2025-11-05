@@ -1,26 +1,18 @@
 trigger:
-- main  # Adjust if needed
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-# 1. Skip default checkout
-- checkout: none
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '17'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
+  displayName: 'Install Java 17'
 
-# 2. Clone OSCAL GitHub repo
 - script: |
-    git clone https://github.com/usnistgov/oscal-content.git
-    cd oscal-content/nist.gov
-  displayName: 'Clone OSCAL Repo'
-
-# 3. Validate OSCAL schema using oscal-cli in Docker
-- script: |
-    docker run --rm -v $(Build.SourcesDirectory)/oscal-content:/oscal usnistgov/oscal-cli validate /oscal/nist.gov/catalog.json
+    curl -LO https://github.com/usnistgov/OSCAL/releases/latest/download/oscal-cli.jar
+    java -jar oscal-cli.jar validate $(System.DefaultWorkingDirectory)/oscal-content/nist.gov/catalog.json
   displayName: 'Validate OSCAL Schema'
-
-# 4. Hash files for integrity
-- script: |
-    cd oscal-content/nist.gov
-    sha256sum * > sha256_manifest.txt
-  displayName: 'Generate SHA-256 Manifest'
