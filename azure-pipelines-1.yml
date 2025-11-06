@@ -1,11 +1,18 @@
 trigger:
-- none  # Manual trigger for testing; change to your branch later if needed
+- none
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-# 1. Install Java 17
+- script: |
+    git clone https://github.com/blackwhiteops/OSCAL.git oscal-tools
+  displayName: 'Clone OSCAL Tools Repo'
+
+- script: |
+    git clone https://github.com/blackwhiteops/oscal-content.git oscal-content
+  displayName: 'Clone OSCAL Content Repo'
+
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '17'
@@ -13,7 +20,6 @@ steps:
     jdkSourceOption: 'PreInstalled'
   displayName: 'Install Java 17'
 
-# 2. Download OSCAL CLI
 - script: |
     set -e
     echo "Downloading OSCAL CLI..."
@@ -21,22 +27,20 @@ steps:
     ls -lh oscal-cli.jar
   displayName: 'Download OSCAL CLI'
 
-# 3. Convert XML to JSON and normalize minified files
 - script: |
     set -e
     echo "Converting XML files to JSON..."
     mkdir -p converted-oscal
-    for file in $(find $(System.DefaultWorkingDirectory)/nist.gov -name "*.xml"); do
+    for file in $(find oscal-content/nist.gov -name "*.xml"); do
       base=$(basename "$file" .xml)
       echo "Converting $file to JSON"
       java -jar oscal-cli.jar convert --to json "$file" "converted-oscal/${base}.json" || echo "Conversion failed for $file" >> converted-oscal/conversion-failures.log
     done
 
     echo "Copying non-minified JSON files..."
-    find $(System.DefaultWorkingDirectory)/nist.gov -name "*.json" ! -name "*-min.json" -exec cp {} converted-oscal/ \;
+    find oscal-content/nist.gov -name "*.json" ! -name "*-min.json" -exec cp {} converted-oscal/ \;
   displayName: 'Convert and Normalize OSCAL Files'
 
-# 4. Validate all converted and normalized OSCAL JSON files (Strict Mode)
 - script: |
     set -e
     echo "Starting OSCAL validation..."
@@ -64,7 +68,6 @@ steps:
     fi
   displayName: 'Validate OSCAL Files (Strict Mode)'
 
-# 5. Parse manually uploaded compliance docs (Word/PDF)
 - script: |
     set -e
     echo "Parsing uploaded compliance documents..."
@@ -72,31 +75,30 @@ steps:
     for file in $(find $(System.DefaultWorkingDirectory)/compliance-uploads -type f \( -name "*.docx" -o -name "*.pdf" \)); do
       echo "Extracting text from $file"
       file_path="$file"
-      python3 - <<'EOF'
-import os
-from pathlib import Path
-import docx
-import fitz  # PyMuPDF for PDFs
-
-file_path = os.environ.get("file_path", "")
-output_path = "parsed-compliance/" + Path(file_path).stem + ".txt"
-
-text = ""
-if file_path.endswith(".docx"):
-    doc = docx.Document(file_path)
-    text = "\n".join([p.text for p in doc.paragraphs])
-elif file_path.endswith(".pdf"):
-    doc = fitz.open(file_path)
-    text = "\n".join([page.get_text() for page in doc])
-
-os.makedirs("parsed-compliance", exist_ok=True)
-with open(output_path, "w") as f:
-    f.write(text)
-EOF
+      echo "import os" > parse_doc.py
+      echo "from pathlib import Path" >> parse_doc.py
+      echo "import docx" >> parse_doc.py
+      echo "import fitz  # PyMuPDF for PDFs" >> parse_doc.py
+      echo "" >> parse_doc.py
+      echo "file_path = os.environ.get('file_path', '')" >> parse_doc.py
+      echo "output_path = 'parsed-compliance/' + Path(file_path).stem + '.txt'" >> parse_doc.py
+      echo "" >> parse_doc.py
+      echo "text = ''" >> parse_doc.py
+      echo "if file_path.endswith('.docx'):" >> parse_doc.py
+      echo "    doc = docx.Document(file_path)" >> parse_doc.py
+      echo "    text = '\\n'.join([p.text for p in doc.paragraphs])" >> parse_doc.py
+      echo "elif file_path.endswith('.pdf'):" >> parse_doc.py
+      echo "    doc = fitz.open(file_path)" >> parse_doc.py
+      echo "    text = '\\n'.join([page.get_text() for page in doc])" >> parse_doc.py
+      echo "" >> parse_doc.py
+      echo "os.makedirs('parsed-compliance', exist_ok=True)" >> parse_doc.py
+      echo "with open(output_path, 'w') as f:" >> parse_doc.py
+      echo "    f.write(text)" >> parse_doc.py
+      python3 parse_doc.py
+      rm parse_doc.py
     done
   displayName: 'Parse Compliance Docs (Word/PDF)'
 
-# 6. Publish all results as artifacts
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'validation-results'
